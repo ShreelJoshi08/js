@@ -1,0 +1,59 @@
+<!-- Problem Definition
+You are working on modernizing a legacy JavaScript application.
+Implement key ECMAScript 6 features like let, const, arrow functions,
+spread operator, etc., for improved performance and maintainability.
+Key Questions to be evaluated during/after Implementation
+1. Why are ES6 features preferred in modern JavaScript?
+2. How do arrow functions improve readability and scope management?
+3. What are the advantages of using Promises and Classes?
+Supplementary Problems –
+• Convert traditional functions into arrow functions
+• Replace var declarations with let/const
+Key Skills to be addressed –
+• ES6 syntax and semantics, modern JS paradigms
+Applications –
+• Frontend SPAs, real-time applications, APIs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical3</title>
+</head>
+<body>
+    <script>
+        
+        const demonstrateES6Features = () => {
+            
+            let variableLet = "I am a let variable";
+            const variableConst = "I am a constant variable";
+
+            console.log(variableLet);
+            console.log(variableConst);
+
+         
+            const arrowFunction = (a, b) => a + b;
+            console.log("Sum using arrow function:", arrowFunction(5, 10));
+
+           
+            const array1 = [1, 2, 3];
+            const array2 = [4, 5, 6];
+            const combinedArray = [...array1, ...array2];
+            console.log("Combined Array using spread operator:", combinedArray);
+
+            
+            const promiseExample = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Promise resolved after 2 seconds");
+                }, 2000);
+            });
+
+            promiseExample.then(result => console.log(result));
+        };
+
+        
+        demonstrateES6Features();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Textboxes and a Button</title>
+</head>
+<body>
+    <input type="text" id="textbox1" placeholder="Enter first value"/>
+    <br></br>
+    <input type="text" id="textbox2" placeholder="Enter second value">
+    
+    <input type="text" id="btn" placeholder="Answer" readonly>
+    <script>
+        var txtname = document.getElementById('textbox1');
+        var txtage = document.getElementById('textbox2');
+        var button = document.getElementById('btn');
+
+        //reg pattern
+        var str=/[a-ZA-Z]+$/;
+        var num=/[0-9]{10}+$/;
+
+        button.addEventListener('click', function() {
+            var name = txtname.value;
+            var age = txtage.value;
+
+            if (str.test(name) && num.test(age)) {
+                button.value = "Valid Input";
+            } else {
+                button.value = "Invalid Input";
+            }
+        });
+    </script>
+</body>

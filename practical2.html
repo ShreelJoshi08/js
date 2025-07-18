@@ -1,0 +1,59 @@
+<!-- Problem Definition
+You are building a user management system. Store user ages in an array
+and apply various operations. Create an object representing a user profile
+and a method to print user details.
+Key Questions to be evaluated during/after Implementation
+1. Which array method is suitable for dynamic data updates?
+2. How is object property manipulation helpful in user profile
+systems?
+3. What challenges arise in real-time data insertion and deletion?
+Supplementary Problems –
+• Implement sorting/filtering of array elements
+• Dynamically update object properties
+Key Skills to be addressed –
+• Array methods, object design, data structure manipulation
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical2</title>
+</head>
+<body>
+    <script>
+        // Define an array to store user ages
+        let userAges = [];
+        function addageofuder(){
+            let age = parseInt(prompt("Enter your age:"));  
+            userAges.push(age);
+            console.log("User age added:", age);
+            }
+        
+        // Function to display user ages
+        function displayUserAges() {
+            console.log("User Ages:", userAges);
+        }   
+        // Function to create a user profile object
+        function createUserProfile(name, age) {
+            return {
+                name: name,
+                age: age,
+                displayDetails: function() {
+                    console.log(`User Profile - Name: ${this.name}, Age: ${this.age}`);
+                }
+            };
+        }
+        
+        addageofuder();
+        displayUserAges();
+        
+        let userProfile = createUserProfile("John Doe", 30);
+        userProfile.displayDetails();
+        
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEC1</title>
+    <script src="new.js"> </script>>
+</head>
+<body>
+    <h1>HI</h1>
+    <!-- Add textboxes for input and answer -->
+    <input type="text" id="input1" placeholder="Enter first value" >
+    <input type="text" id="input2" placeholder="Enter second value" onblur="alert('You left the input!')" >
+    <input type="text" id="answer" placeholder="Answer" readonly>
+    <!-- <button onclick="calculate()">Calculate</button> -->
+
+    <p id="info">hi my name is shreel </p>
+    <script>
+        console.log("Hello World");
+        var x = 10;
+        alert("Hello World");
+        document.write("<b>The value of x is:</b> " + (x+10));
+        ES5
+        function add(a, b) {
+            return a + b;
+        }
+        console.log(add(5, 10));
+        //ES6
+        function fun1(){
+            var x=10;
+            if(x>5){
+                x=x+5;
+                console.log(x);
+                return x;
+            }
+            
+        }
+        console.log(fun1());
+        const fun2 = () => {
+            let x = 20;
+            if (x > 10) {
+                x = x + 10;
+                console.log(x);
+                return x;
+            } 
+
+        }
+        console.log(fun2());
+
+        var x;
+        console.log(x); 
+        x = 49;
+        
+        let y ;
+        console.log(y);
+        y = 60; 
+
+
+        function calculate() {
+            const val1 = document.getElementById('input1').value;
+            
+            const val2 = document.getElementById('input2').value;
+            
+            const ans = Number(val1) + Number(val2);
+            document.getElementById('answer').value = ans;
+        }
+
+        document.write(info.innerHTML= "Hello World");
+        
+    </script>
+    
+</body>
+</html>
