@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add New Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+    }
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 2rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>🆕 Add New Product</h1>
+  <form method="POST" action="/product">
+    <label for="productName">Product Name:</label>
+    <input type="text" name="productName" id="name" required />
+
+    <label for="image">Image (emoji):</label>
+    <input type="text" name="image" id="image" required />
+
+    <label for="brand">Brand:</label>
+    <input type="text" name="brand" id="brand" required />
+
+    <label for="specs">Specifications:</label>
+    <input type="text" name="specs" id="specs" required />
+
+    <label for="stock">Stock:</label>
+    <input type="text" name="stock" id="stock" required />
+
+    <label for="price">Price:</label>
+    <input type="text" name="price" id="price" required />
+
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" rows="4" required></textarea>
+
+    <label for="warranty">Warranty:</label>
+    <select name="warranty" id="warranty">
+      <option value="true">Yes</option>
+      <option value="false">No</option>
+    </select>
+
+    <button type="submit">Add Product</button>
+  </form>
+</body>
+</html>

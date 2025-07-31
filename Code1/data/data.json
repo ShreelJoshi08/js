@@ -1,0 +1,24 @@
+[
+  {
+    "id": 0,
+    "name": "Wireless Headphones",
+    "image": "🎧",
+    "brand": "Sony",
+    "specs": "Noise Cancelling, Bluetooth 5.0",
+    "stock": "25 units",
+    "price": "150.00",
+    "warranty": true,
+    "description": "Sony Wireless Headphones with industry-leading noise cancellation and high-quality sound."
+  },
+  {
+    "id": 1,
+    "name": "Smartphone Galaxy",
+    "image": "📱",
+    "brand": "Samsung",
+    "specs": "128GB, 8GB RAM",
+    "stock": "40 units",
+    "price": "799.00",
+    "warranty": true,
+    "description": "The Samsung Galaxy smartphone featuring powerful performance, stunning display, and advanced cameras."
+  }
+]
